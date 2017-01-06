@@ -12,15 +12,15 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
-			/*background-color: rgb(255, 0, 102)*/;
-		}
-		#SUtitle{
-			color: rgb(255, 255, 0);
 			text-shadow:  
 				1px 1px 0 #000,  
     			1px -1px 0 #000,
     			-1px 1px 0 #000,
      			-1px -1px 0 #000;
+     		color: white;
+		}
+		#SUtitle{
+			color: rgb(255, 255, 0);
 		}
 		#SUtitle2{
 			color: rgb(255, 204, 0);
@@ -39,11 +39,16 @@
      			-1px -1px 0 #000;
      		font-weight: lighter;
 		}
+		#mainimg{
+			margin: 0 10% 0 10%;
+		}
 		/*Add an image of the media to the page. Allign font according to the layout that's been decided upon. Position image however it works*/
 		/*Create a table! Make 2 tr's of 2 td's, and input Steven and each crystal gem. This way you can include an image, character name, and voice actor name in each. That way we can get rid of the ul id'd VA.*/
 		/*reminder when you put some line height 100%, you put text in the CENTER vertically, of it's div*/
 
 		/*DOWNLOAD CREWNIVERSE FONT, but have the google font the backup font. either way, should look good, comment out the official font once in a while to */
+
+		/*my 10/10 goal is to have mini slideshows for each character, AND for the main image, which should be directly above the synopsis.*/
 	</style>
 </head>
 <header>
@@ -52,7 +57,19 @@
 	<h3 id="Rebecca">by Rebecca Sugar</h3>
 </header>
 <body>
-	<p id="syn">Steven Universe is an American animated television series for Cartoon Network. It is the coming-of-age story of a young boy named Steven Universe, who must discover his magical Gem powers! Guiding him are the Crystal Gems &#45; Pearl, Garnet, and Amethyst, three magical humanoid aliens. The Crystal Gems hold all the secrets to Steven's past &amp; present, but will have to discover the future with him!</p>
+	<img id="mainimg" src="StevenUwall.jpg" width="960px" height="576px">
+	<p id="syn">Steven Universe is an American animated television series for Cartoon Network. It is the coming-of-age story of a young boy named Steven Universe, who must discover his magical Gem powers! Guiding him are the Crystal Gems &#45; Pearl, Garnet, and Amethyst, three magical humanoid aliens. The Crystal Gems hold all the secrets to Steven's past, but it's up to Steven to figure out what it really means to be both a Human and a Crystal Gem!</p>
+
+	<table>Meet the characters!
+	<tr>
+		<td><img src="Steven2.jpg" width="620px" height="300px">This is Steven Universe! He's a human, and also is a Crystal Gem (which you can see on his belly button). He's on a journey to discover his Gem powers, such as creating a magic shield, magic bubble, and more!</td>
+		<td><img src="Garnet.png" width="620px" height="300px">This is Garnet! She's a mysterious Gem who has the power to see into the future, and turn her hands into metallic fists. She's very calm with Steven, and prefers to let him grow up without spoiling things for him.</td>
+	</tr>
+	<tr>
+		<td><img src="Pearl.png" width="620px" height="300px">This is Pearl! She has the power to draw a magical sword from the gem on her forehead. She's very careful, and prefers to take as little risks as possible in any given situation.</td>
+		<td><img src="Amethyst.png" width="620px" height="300px">This is Amethyst! She has the power to transform her body, and can also draw a magical whip from the gem in her chest. She loves having fun and making a mess, and prefers to take any challenge head on!</td>
+	</tr>
+	</table>
 	<ul id="VA"> Voice Actors!
 		<li>Zach Callison as Steven Universe</li>
 		<li>Deedee Magno as Pearl</li>
