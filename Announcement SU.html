@@ -17,12 +17,12 @@
     			1px -1px 0 #000,
     			-1px 1px 0 #000,
      			-1px -1px 0 #000;
-     		color: white;
+     		color: rgb(179, 179, 255);
 		}
 		#SUtitle{
 			color: rgb(255, 255, 0);
 			padding: 0;
-			margin: 0;
+			margin: 0 0 0 20px;
 		}
 		#SUtitle2{
 			color: rgb(255, 204, 0);
@@ -32,7 +32,7 @@
     			-1px 1px 0 #000,
      			-1px -1px 0 #000;
      		padding: 0;
-     		margin: 0;
+			margin: 0 0 0 20px;
 		}
 		#Rebecca{
 			color: rgb(51, 173, 255);
@@ -43,29 +43,44 @@
      			-1px -1px 0 #000;
      		font-weight: lighter;
      		padding: 0;
-     		margin: 0;
+			margin: 0 0 0 20px;
 		}
-		#mainimg{
-			margin: 0 10% 0 10%;
+		#vid{
+			display: block;
+			margin: 0 auto;
 		}
 		.chardescription{
 			width: 620px;
 		}
-		/*Add an image of the media to the page. Allign font according to the layout that's been decided upon. Position image however it works*/
-		/*reminder when you put some line height 100%, you put text in the CENTER vertically, of it's div*/
-
-		/*DOWNLOAD CREWNIVERSE FONT, but have the google font the backup font. either way, should look good, comment out the official font once in a while to */
-
-		/*DASH project 3 steps 3 and 4, use the "hide/show" description stuff for the site instead of a slideshow, which is an idea. Or input the first episode of the show if it's on youtube in full, I don't even know anymore tbh*/
+		#container{
+			color: rgb(242, 242, 242);
+			margin: 0 auto;
+			width: 1350px;
+			background-color: rgba(0,0,0,.3);
+			border-radius: 3%;
+		}
+		#steven{
+			color: yellow;
+		}
+		#garnet{
+			color: red;
+		}
+		#pearl{
+			color: skyblue;
+		}
+		#amethyst{
+			color: rgb(204,172,219);
+		}
 	</style>
 </head>
+<div id="container">
 <header>
 	<h1 id="SUtitle">STEVEN UNIVERSE</h1>
 	<h2 id="SUtitle2">AND THE CRYSTAL GEMS</h2>
 	<h3 id="Rebecca">by Rebecca Sugar</h3>
 </header>
 <body>
-	<img id="mainimg" src="StevenUwall.jpg" width="960px" height="576px">
+	<iframe id="vid" width="960" height="576" src="https://www.youtube.com/embed/mkODPtLfRDo" frameborder="0" allowfullscreen></iframe>
 	<p id="syn">Steven Universe is an American animated television series for Cartoon Network. It is the coming-of-age story of a young boy named Steven Universe, who must discover his magical Gem powers! Guiding him are the Crystal Gems &#45; Pearl, Garnet, and Amethyst, three magical humanoid aliens. The Crystal Gems hold all the secrets to Steven's past, but it's up to Steven to figure out what it really means to be both a Human and a Crystal Gem!</p>
 
 	<table>Meet the characters!
@@ -74,16 +89,16 @@
 		<td><img src="Garnet.png" width="620px" height="300px"></td>
 	</tr>
 	<tr>
-		<td class="chardescription">This is Steven Universe! He's a human, and also is a Crystal Gem (which you can see on his belly button). He's on a journey to discover his Gem powers, such as creating a magic shield, magic bubble, and more!</td>
-		<td class="chardescription">This is Garnet! She's a mysterious Gem who has the power to see into the future, and turn her hands into metallic fists. She's very calm with Steven, and prefers to let him grow up without spoiling things for him.</td>
+		<td class="chardescription" id="steven">This is Steven Universe! He's a human, and also is a Crystal Gem (which you can see on his belly button). He's on a journey to discover his Gem powers, such as creating a magic shield, magic bubble, and more!</td>
+		<td class="chardescription" id="garnet">This is Garnet! She's a mysterious Gem who has the power to see into the future, and turn her hands into metallic fists. She's very calm with Steven, and prefers to let him grow up without spoiling things for him.</td>
 	</tr>
 	<tr>
 		<td><img src="Pearl.png" width="620px" height="300px"></td>
 		<td><img src="Amethyst.png" width="620px" height="300px"></td>
 	</tr>
 	<tr>
-		<td class="chardescription">This is Pearl! She has the power to draw a magical sword from the gem on her forehead. She's very careful, and prefers to take as little risks as possible in any given situation.</td>
-		<td class="chardescription">This is Amethyst! She has the power to transform her body, and can also draw a magical whip from the gem in her chest. She loves having fun and making a mess, and prefers to take any challenge head on!</td>
+		<td class="chardescription" id="pearl">This is Pearl! She has the power to draw a magical sword from the gem on her forehead. She's very careful, and prefers to take as little risks as possible in any given situation.</td>
+		<td class="chardescription" id="amethyst">This is Amethyst! She has the power to transform her body, and can also draw a magical whip from the gem in her chest. She loves having fun and making a mess, and prefers to take any challenge head on!</td>
 	</tr>
 	</table>
 	<ul id="VA"> Voice Actors!
@@ -92,7 +107,7 @@
 		<li>Michaela Dietz as Amethyst</li>
 		<li>Estelle as Garnet</li>
 	</ul>
-</body>
+</body></div>
 <footer>
 	<small>Available on Cartoon Network</small> 
 </footer>
